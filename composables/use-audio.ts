@@ -25,7 +25,7 @@ export const useAudio = (filename: string) => {
         audio.value.pause()
     }
 
-    watchEffect(() => {
+    onMounted(() => {
 
         if (!audio.value) {
             return
